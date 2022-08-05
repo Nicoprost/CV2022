@@ -7,12 +7,15 @@
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
-        </style>
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,500&display=swap" rel="stylesheet">
     <title>CV2022</title>
 </head>
 <body>
     <header>
-        <a href="#" class="logo">logo</a>
+        <a href="#" class="logo" title="Cessez de me chatouiller">Nicolas Prost</a>
         <div class="rightSide">
             <div class="btns dayNight">
                 <ion-icon name="moon-outline"></ion-icon>
@@ -24,18 +27,101 @@
             </div>
         </div>
     </header>
+    <section class="main">
+        <video src="media/Monde.mp4"autoplay loop muted type="mp4"></video>
+        <img src="media/mask.jpg" class="mask">
+        <h2 class="title"></h2>
+        <p class="proverbe1"><i>"Dans la vie, vous passez d’abord par un test,<br> puis vous apprenez la leçon, alors préparez-vous!"</i></p>
+        <p class="copyright">Intégration @Nico Prost</p>
+    </section>
+    <!--Sidebar Navigation-->
+    <ul class="navigation">
+        <li><a href="#popup1">Home</a></li>
+        <li><a href="#popup2">About</a></li>
+        <li><a href="#popup3">Skills</a></li>
+        <li><a href="">Contact</a></li>
+        <p class=" proverbe2"><i> "Je n'ai pas échoué au test,<br>j'ai juste trouvé 100 façons de faire mal"</i></p>
+    </ul>
+
+    <!--PopupHome-->
+            <div class="card">
+                <div class="border">
+                    <h2>Nicolas Prost</h2>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/nicolas-prost-a5085174/" target="blank"><ion-icon name="logo-linkedin" ></ion-icon></a>
+                        <a href="https://www.instagram.com/quatzyeux/" target="blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="mailto:nicoprost69@gmail.com"><ion-icon name="mail-outline"></ion-icon></a>
+                        <a href="media/CV Testeur2022.pdf"download><ion-icon name="download-outline"></ion-icon></a>
+                    
+                        <h3>Testeur QA</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <a href="#" class="popup1_close">&times;</a>
+    </div>
+
+    <!--popupAbout-->
+     <div id="popup2" class="popup2">
+        <div class="popup2_content">
+            <div class="popup2_text">
+            <p><i>"Ma conversion en tant que Testeur de Logiciel est la continuité de mon expérience. 
+                Auto-didacte et motivé, formé par IT Akademy Lyon à orchestrer au mieux le travail de correction
+                et de gestion des anomalies des logiciels. La Qualité est au coeur de mon projet. 20 ans d'expérience dans l'évènementiel comme
+                Régisseur Lumière et Photographe. Adaptable et flexible, j'ai l'esprit d'équipe et la capacité à bien composé
+                avec les obstacles et à rester fidèle aux objectifs".</i>
+            </p>
+            </div>
+        <div class="popup2_list">
+            <ul>
+                <li>Méthode Agile</li>
+                <li>Méthodologie ISTQB</li>
+                <li>Figma</li>
+                <li>Notion</li>
+                <li>Squash Tm</li>
+                <li>Jira</li>
+                <li>Encadrement des équipes</li>
+                <li>L2 Anglais</li>
+                <li>Adobe série</li>
+                <li>Conception visuel</li>
+                <li>UI/UX Design</li>
+            </ul>
+        </div>
+        </div>
+            <a href="#" class="popup2_close">&times;</a>
+     </div>
+
+     <!-----popupSkills-->
+     <div id="popup3" class="popup3">
+        <div class="popup3_content">
+        </div>
+        <a href="#" class="popup2_close">&times;</a>
+    </div>
+        
+
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
     <script>
         let dayNight = document.querySelector(".dayNight")
         let MenuToggle = document.querySelector('.MenuToggle')
         let body = document.querySelector('body')
+        let navigation = document.querySelector('.navigation')
 
         dayNight.onclick = function(){
-            body.classlist.toggle('dark')
-            dayNight.classlist.toggle('active')
-            
+            body.classList.toggle('dark')
+            dayNight.classList.toggle('active')
+            }
+        MenuToggle.onclick = function(){
+            MenuToggle.classList.toggle('active')
+            navigation.classList.toggle('active')
         }
     </script>  
+    <!--Rocket onclick-->
+    <script>
+        function changebg(){
+            document.querySelector('.main').style.background = "url('media/Ocean.mp4') center center / cover";
+        }
+    </script>
 </body>
 </html>

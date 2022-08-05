@@ -39,6 +39,10 @@ header .logo
     text-transform: uppercase;
     text-shadow: 5px 5px var(--grey);
 }
+header .logo:hover
+{
+    transform: rotateX(180deg);
+}
 
 .rightSide
 {
@@ -272,7 +276,7 @@ h2 span:nth-child(2n+1):hover
 {
     position: absolute;
     right: 30px;
-    top:10px;
+    top:0;
     text-decoration: none;
     color: grey;
     font-size: 3em;
@@ -414,7 +418,7 @@ a
 {
     position: absolute;
     right: 30px;
-    top:10px;
+    top:0;
     text-decoration: none;
     color: grey;
     font-size: 3em;
@@ -457,3 +461,260 @@ a
 {
    color: var(--grey);
 }
+
+/*********popupSkills******/
+.popup3
+{
+    position: absolute;
+    top:50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+    background: var(--black);
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 650px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity:0;
+    transition: .5s;
+    z-index: 5;
+}
+
+.popup3:target
+{
+    visibility: visible;
+    opacity: 1;
+    
+}
+.popup3_content
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.popup3_close
+{
+    position: absolute;
+    right: 30px;
+    top:0;
+    text-decoration: none;
+    color: grey;
+    font-size: 3em;
+}
+/*************popup3_content******/
+.name_skills
+{
+    display: flex;
+    flex-direction: column;
+    color:var(--white);
+    font-size: 1.5em;
+}
+.name_skills span
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:var(--black);
+    font-size: 1.5em;
+    width: 250px;
+    font-family: "Kanit", sans-serif;
+    margin:10px 0;
+    background-color: var(--white);
+    box-shadow: inset 22.82px 22.82px 16px #bebfc2, inset -22.82px -22.82px 16px var(--white);
+    border-radius: 50px;
+}
+.bar_skills
+{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.bar
+{
+    width:400px;
+    height: 30px;
+    margin:22px 30px;
+    background-color: var(--white);
+    border-radius: 20px;
+    box-shadow: inset 22.82px 22.82px 16px #bebfc2, inset -22.82px -22.82px 16px var(--white);
+}
+.bar .progress1
+{
+    height: 100%;
+    width: 80%;
+    background: linear-gradient(to right,rgb(236, 157, 91), rgb(221, 99, 17));
+    border-radius: 20px;
+    border: 1px solid var(--black);
+}
+.bar .progress1 p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.bar .progress2
+{
+    height: 100%;
+    width: 90%;
+    background: linear-gradient(to right,rgb(91, 236, 91), rgb(50, 212, 10));
+    border-radius: 20px;
+    border: 1px solid var(--black);
+}
+.bar .progress2 p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.bar .progress3
+{
+    height: 100%;
+    width: 75%;
+    background: linear-gradient(to right,rgb(91, 137, 236), rgb(17, 65, 221));
+    border-radius: 20px;
+    border: 1px solid var(--black);
+}
+.bar .progress3 p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.bar .progress4
+{
+    height: 100%;
+    width: 40%;
+    background: linear-gradient(to right,rgb(236, 91, 91), rgb(221, 17, 17));
+    border-radius: 20px;
+    border: 1px solid var(--black);
+}
+.bar .progress4 p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+.bar .progress5
+{
+    height: 100%;
+    width: 60%;
+    background: linear-gradient(to right,rgb(236, 214, 91), rgb(221, 218, 17));
+    border-radius: 20px;
+    border: 1px solid var(--black);
+}
+.bar .progress5 p
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+}
+/***********popupExperience******/
+.popup4
+{
+    position: absolute;
+    top:50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%,-50%);
+    background: var(--black);
+    justify-content: center;
+    align-items: center;
+    width: 1000px;
+    height: 650px;
+    border-radius: 8px;
+    visibility: hidden;
+    opacity:0;
+    transition: .5s;
+    z-index: 5;
+}
+
+.popup4:target
+{
+    visibility: visible;
+    opacity: 1;
+    
+}
+.popup4_content
+{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 900px;
+    height: 600px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    
+}
+.popup4_close
+{
+    position: absolute;
+    right: 30px;
+    top:0;
+    text-decoration: none;
+    color: grey;
+    font-size: 3em;
+}
+/*******popup4 content****/
+.ex1
+{
+    margin: 5px 0;
+    padding:5px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: rgba(58, 93, 247, 0.397);
+}
+.ex2
+{
+    margin: 5px 0;
+    padding:5px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: rgba(247, 58, 58, 0.397);
+}
+.ex3
+{
+    margin: 5px 0;
+    padding:5px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: rgba(234, 247, 58, 0.397);
+}
+.ex4
+{
+    margin: 5px 0;
+    padding:5px;
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: rgba(58, 247, 105, 0.397);
+}
+.popup4_content h2
+{
+    font-family: 'poppins',sans-serif;
+    text-decoration: underline;
+}
+.popup4_content h3
+{
+    font-family: 'poppins',sans-serif;
+}
+
+

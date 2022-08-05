@@ -39,11 +39,13 @@
         <li><a href="#popup1">Home</a></li>
         <li><a href="#popup2">About</a></li>
         <li><a href="#popup3">Skills</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#popup4">Experience</a></li>
         <p class=" proverbe2"><i> "Je n'ai pas échoué au test,<br>j'ai juste trouvé 100 façons de faire mal"</i></p>
     </ul>
 
     <!--PopupHome-->
+    <div id="popup1" class="popup1">
+        <div class="popup1_content">
             <div class="card">
                 <div class="border">
                     <h2>Nicolas Prost</h2>
@@ -65,10 +67,10 @@
      <div id="popup2" class="popup2">
         <div class="popup2_content">
             <div class="popup2_text">
-            <p><i>"Ma conversion en tant que Testeur de Logiciel est la continuité de mon expérience. 
-                Auto-didacte et motivé, formé par IT Akademy Lyon à orchestrer au mieux le travail de correction
+            <p><i>"Ma reconversion en tant que Testeur de Logiciel est la continuité de mon expérience. 
+                Autodidacte et motivé, formé par IT Akademy Lyon à orchestrer au mieux le travail de correction
                 et de gestion des anomalies des logiciels. La Qualité est au coeur de mon projet. 20 ans d'expérience dans l'évènementiel comme
-                Régisseur Lumière et Photographe. Adaptable et flexible, j'ai l'esprit d'équipe et la capacité à bien composé
+                Régisseur Lumière et Photographe. Adaptable et flexible, j'ai l'esprit d'équipe et la capacité à bien composer
                 avec les obstacles et à rester fidèle aux objectifs".</i>
             </p>
             </div>
@@ -94,11 +96,61 @@
      <!-----popupSkills-->
      <div id="popup3" class="popup3">
         <div class="popup3_content">
+             <div class="name_skills">
+                    <span>VsCode</span>
+                    <span>Html</span>
+                    <span>Css</span>
+                    <span>Javascript</span>
+                    <span>Github</span>
+            </div>
+            <div class="bar_skills">
+                <div class="bar"><div class="progress1"><p>80%</p></div></div>
+                <div class="bar"><div class="progress2"><p>90%</p></div></div>
+                <div class="bar"><div class="progress3"><p>75%</p></div></div>
+                <div class="bar"><div class="progress4"><p>40%</p></div></div>
+                <div class="bar"><div class="progress5"><p>60%</p></div></div>
+            </div>
         </div>
-        <a href="#" class="popup2_close">&times;</a>
+            <div class="bar_skills"></div>
+        <a href="#" class="popup3_close">&times;</a>
     </div>
-        
+    <!------popupExperience-->
+    <div id="popup4" class="popup4">
+        <div class="popup4_content">
+            <div class="ex1">
+                <h2>Tester QA</h2>
+                <h3>BluewaySoftware<i> depuis janvier 2022</i></h3>
+                <p>Rédaction des exigences de test et du cahier de Cas de test - 
+                Organisation de la méthode de gestion des tests - test exploratoire, Test de non-régression - 
+                Automatisation RobotFrameWorks - Campagne Squash Tm 
+                </p>
+            </div>
+            <div class="ex2">
+                <h2>Régisseur lumière</h2>
+                <h3>CCCLyon, Nuit de Fourvière, Studio O.lyonnais, France3 <i>de 2002 à 2019</i></h3>
+                <p>La régie lumière est faites d'image lumineuse que vous vous destinez à montrer au moment opportun,
+                 c'est tout ou presque ! J'ai appris, la mise en scène, la colorimétrie, les techniques vidéo. Mais aussi,
+                 la gestion d'équipe, de stock, et à améliorer les opérations redondantes.
+                </p>
+            </div>
+            <div class="ex3">
+                <h2>Photographe Portraitiste</h2>
+                <h3>La Cogedim, La Sucrière, APEC, CCCLyon <i>de 2013 à 2021</i></h3>
+                <p>La photographie, je l'ai partagé avec les autres. Cette activité fut faite de défis technique et de rencontres
+                J'ai réalisé des portraits individuels, beaucoup. Des reportages évènementiels et des concerts.
+                </p>
 
+            </div>
+            <div class="ex4">
+                <h2>Photographe et régisseur bénévole</h2>
+                <h3>Handicap international, Japan Touch, World Skills France<i> de 2002 à 2020</i></h3>
+                <p>Pourquoi le bénévolat ? par goût des choses simples et de l'autonomie. Participer à un projet,
+                être une fourmi et se féliciter d'avoir participer.
+                </p>
+            </div>
+        </div>
+        <a href="#" class="popup4_close">&times;</a>
+    </div>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="app.js"></script>
@@ -121,6 +173,13 @@
     <script>
         function changebg(){
             document.querySelector('.main').style.background = "url('media/Ocean.mp4') center center / cover";
+        }
+    </script>
+    <!----Range----->
+    <script>
+        function rangeSlider(value){
+            document.getElementById('rangeValue').innerHTML
+            = value;
         }
     </script>
 </body>
